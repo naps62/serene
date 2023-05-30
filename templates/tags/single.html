@@ -2,7 +2,7 @@
 
 {% block page %}tag-single{% endblock page %}
 {% block lang -%}
-{% set section = get_section(path="blog/_index.md", metadata_only=true) %}
+{% set section = get_section(path="posts/_index.md", metadata_only=true) %}
 {%- if section.extra.lang %}{{ section.extra.lang }}{% else %}{{ lang }}{% endif -%}
 {%- endblock lang %}
 {% block title %}{{section.title}}{% endblock title %}
